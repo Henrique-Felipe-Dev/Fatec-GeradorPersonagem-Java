@@ -89,7 +89,8 @@ public class DaoPersonagemClasseRpg {
             retorno = new PersonagemClasseRpg(
                     rs.getInt(1),
                     rs.getInt(2),
-                    rs.getString(3));
+                    rs.getInt(3),
+                    rs.getString(4));
             // adiciona o usu à lista de usus
         }
         stmt.close();

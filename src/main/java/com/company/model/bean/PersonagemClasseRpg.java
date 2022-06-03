@@ -9,6 +9,10 @@ public class PersonagemClasseRpg {
     private Personagem personagem;
     private ClasseRpg classeRpg;
 
+    public PersonagemClasseRpg(){
+
+    }
+
     public PersonagemClasseRpg(int id) {
         this.id = id;
     }
@@ -22,7 +26,6 @@ public class PersonagemClasseRpg {
         this.idClasse = idClasse;
         this.obs = obs;
     }
-
     public PersonagemClasseRpg(int id, int idPersonagem, int idClasse, String obs) {
         this.id = id;
         this.idPersonagem = idPersonagem;

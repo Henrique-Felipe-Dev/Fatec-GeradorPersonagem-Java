@@ -51,5 +51,10 @@ public class ControllerUsuario {
 
         return validado;
     }
+    public Usuario ValidarWeb(Usuario u) throws SQLException, ClassNotFoundException {
+        this.daoUsu = new DaoUsuario();
+        Usuario usuSaida = this.daoUsu.validar(u);
+        return usuSaida;
+    }
     
 }
